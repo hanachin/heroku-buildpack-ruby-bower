@@ -1,3 +1,65 @@
+## Master
+
+
+## v85 (12/05/2012)
+
+Features:
+
+
+Bugfixes:
+
+* Any errors in a Rakefile will now be explicitly shown as such instead of hidden in a `assets:precompile` task detection failure (#171)
+* Now using correct default "hobby" database #179
+
+## v84 (11/06/2013)
+
+Features:
+
+* Any Ruby app with a rake `assets:precompile` task present that does not run successfully will now fail. This matches the current behavior of Rails 3 and 4 deploys.
+
+
+Bugfixes:
+
+* Fix default gem cache
+
+## v83 (10/29/2013)
+
+Features:
+
+* RubyVersion extracted into its own class
+* Release no longer requires language_pack
+* Detect no longer requires language_pack
+* Downloads with curl now retry on failed connections, pass exit status appropriately
+
+Bugfixes:
+
+* Errors in Gemfiles will no longer show up as bad ruby versions #36
+* Fix warning warning libjffi-1.2.so on < JRuby 1.7.3
+
+## v82 (10/28/2013)
+
+Bugfixes:
+
+* Rails 3 deploys that do not successfully run `assets:precompile` will now fail.
+
+## v81 (10/15/2013)
+
+Features:
+
+* add Default Bundler Cache for new Ruby 2.0.0 apps
+* use Virginia S3 bucket instead of Cloudfront
+
+## v80 (9/23/2013)
+
+Features:
+
+* Cache 50mb of Rails 4 intermediate cache
+* Support for Ruby 2.1.0
+
+Bugfixes:
+
+* Disable invoke dynamic on JRuby by default until JDK stabalizes it
+
 ## v79 (9/3/2013)
 
 Bugfixes:
